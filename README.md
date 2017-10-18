@@ -49,6 +49,10 @@ profiles:
       secret: $ACCESS_SECRET
 ```
 
+> You can also generate this file by running `env2creds`, which is included in this GitHub repo.
+> `env2creds` can be called from inside of the container as well, if you provide
+> the necessary environment variables.
+
 This file can now be mounted into the Docker container at `/root/.trc`. Now, in
 future runs of the client you will not need to re-run `t autorize`.
 
