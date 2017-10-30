@@ -62,3 +62,11 @@ $ docker run -it --mount type=bind,source=$(pwd)/.trc,target=/root/.trc,readonly
 ```
 
 At this point, any typical `t` commands can be used inside of the container.
+
+## Using With Brigade
+
+See the `brigade.js` file in this project to see how to use the `t` program within
+a Brigade script.
+
+It is best to use `env2creds` to generate credentials, and inject the credentials
+as secrets coming from your Brigade's project.
