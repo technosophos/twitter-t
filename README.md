@@ -70,3 +70,16 @@ a Brigade script.
 
 It is best to use `env2creds` to generate credentials, and inject the credentials
 as secrets coming from your Brigade's project.
+
+To do this, you will want to add a section to your Project's `values.yaml` that
+looks like this:
+
+```yaml
+secrets:
+  OWNER: <your user name>
+  CONSUMER_KEY: <consumer key>
+  CONSUMER_SECRET: <consumer secret>
+  ACCESS_TOKEN: <auth token>
+  ACCESS_SECRET: <auth secret>
+```
+
